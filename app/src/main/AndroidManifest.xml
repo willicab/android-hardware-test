@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ve.gob.vit.calidad">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.gyroscope" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_gear"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/main_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WifiActivity"
+            android:label="@string/wifi_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BtActivity"
+            android:label="@string/bt_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MicActivity"
+            android:label="@string/mic_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CamActivity"
+            android:label="@string/cam_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GsmActivity"
+            android:label="@string/radio_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NfcActivity"
+            android:label="@string/nfc_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GpsActivity"
+            android:label="@string/gps_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccelActivity"
+            android:exported="true"
+            android:label="@string/accel_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompassActivity"
+            android:label="@string/compass_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GyroActivity"
+            android:label="@string/gyro_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LightActivity"
+            android:label="@string/light_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProxActivity"
+            android:label="@string/prox_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BarActivity"
+            android:label="@string/bar_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StepActivity"
+            android:label="@string/step_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinalActivity"
+            android:label="@string/final_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/report_activity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

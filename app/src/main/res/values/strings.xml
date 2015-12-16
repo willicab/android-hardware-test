@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calidad</string>
+    <string name="main_activity">Pruebas de hardware</string>
+    <string name="wifi_activity">Prueba de Wi-Fi</string>
+    <string name="bt_activity">Prueba de Bluetooh</string>
+    <string name="mic_activity">Prueba de Micrófono</string>
+    <string name="cam_activity">Prueba de Cámara</string>
+    <string name="radio_activity">Prueba de GSM</string>
+    <string name="nfc_activity">Prueba de NFC</string>
+    <string name="gps_activity">Prueba de GPS</string>
+    <string name="accel_activity">Prueba de Acelerómetro</string>
+    <string name="compass_activity">Prueba de Brújula</string>
+    <string name="gyro_activity">Prueba de Giroscopio</string>
+    <string name="light_activity">Prueba de Sensor de Luz</string>
+    <string name="prox_activity">Prueba de Sensor de Proximidad</string>
+    <string name="bar_activity">Prueba de Barómetro</string>
+    <string name="step_activity">Prueba de Contador de Pasos</string>
+    <string name="final_activity">Final de las Pruebas</string>
+    <string name="report_activity">Reportes</string>
+</resources>
